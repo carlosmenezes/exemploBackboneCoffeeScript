@@ -5,7 +5,7 @@ define ['jQuery', 'Underscore', 'Backbone', 'collections/projects', 'text!templa
 			initialize: ->
 				@collection = new projectsCollection;
 				@collection.add [{ name: 'BackOff' }, { name: 'Moip'}]
-				@collection.add { name: 'Big Ben' };
+				@collection.add { name: 'Big Ben' }
 
 				compiledTemplate = _.template projectListTemplate, { projects: @collection.models }
 
